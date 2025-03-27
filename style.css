@@ -3,11 +3,11 @@
     justify-content: space-between; 
     align-items: center; 
     padding: 10px 20px;
-    background-color: white;
+    background-color: #dadfd6;
 }
 
 .nama {
-    color: rgb(42, 100, 175);
+    color: #1e5170;
     font-weight: bold;
     text-decoration: none;
     font-size: 20px;
@@ -29,18 +29,18 @@ nav ul li {
 }
 
 body {
-    margin: 35px;
+    background-color: #dadfd6;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: rgb(161, 109, 12);
+    color: #1b4138;
     font-weight: 600;
     font-size: 17px;
 }
 
 nav ul li a:hover {
-    color: rgba(42, 100, 175);
+    color: #B3C100;
 }
 
 * {
@@ -81,7 +81,7 @@ section {
 }
 
 .row-1 {
-    color: rgb(161, 109, 12);
+    color: #1b4138;
     font-size: 30px;
 }
 
@@ -101,7 +101,7 @@ section {
 }
 
 .row-1 #textjalan {
-    color: rgb(42, 100, 175);
+    color: #1e5170;
     font-size: 42px;
     margin-top: -30px;
     white-space: nowrap;
@@ -118,7 +118,6 @@ section {
     color: rgb(39, 38, 38);
     line-height: 35px;
     font-size: 25px;
-    /* text-justify: distribute-all-lines; */
 }
 
 .row-3 {
@@ -141,34 +140,33 @@ section {
 }
 
 .icon {
-    background-size: cover; /* Agar gambar menyesuaikan ukuran elemen */
-    background-position: center; /* Menjaga gambar tetap terpusat */
+    background-size: cover; 
+    background-position: center; 
     position: absolute;
     width: 100%;
     height: 100%;
 }
 
 .icon-hover {
-    position: absolute; /* Menumpuk gambar hover dengan gambar pertama */
+    position: absolute; 
     top: 0;
     left: 0;
-    width: 100%; /* Ukuran gambar */
-    height: 100%; /* Ukuran gambar */
-    background-size: cover; /* Menyesuaikan gambar dengan ukuran elemen */
-    background-position: center; /* Menjaga gambar tetap terpusat */
-    opacity: 0; /* Gambar hover disembunyikan secara default */
-    transition: opacity 0.1s ease; /* Animasi perubahan opacity */
+    width: 100%; 
+    height: 100%;
+    background-size: cover; 
+    background-position: center; 
+    opacity: 0; 
+    transition: opacity 0.1s ease; 
 }
 
-/* Efek hover: Sembunyikan gambar pertama dan tampilkan gambar kedua */
+
 .icon-container:hover .icon {
-    opacity: 0; /* Sembunyikan gambar pertama saat hover */
+    opacity: 0; 
 }
 
 .icon-container:hover .icon-hover {
-    opacity: 1; /* Tampilkan gambar kedua saat hover */
+    opacity: 1; 
 }
-
 
 table{
     width: 100%;
@@ -182,11 +180,11 @@ td[colspan="2"]{
 }
 
 table h3{
-    color: rgb(161, 109, 12);
+    color: #1e5170;
 }
 
 table h1{
-    color: rgb(42, 100, 175);
+    color: #1b4138;
     margin-top: 15px;
 }
 
@@ -216,7 +214,7 @@ td img{
 
 .funfact {
     line-height: 30px;
-    color: rgb(161, 109, 12);
+    color:#07575B;
 }
 
 .my-funfact {
@@ -241,7 +239,7 @@ div.card-container{
 } 
 
 .card{
-    background: white;
+    background: #d5e9ee;
     border-radius: 10px;
     padding: 15px;
     width: 300px;
@@ -265,13 +263,13 @@ div.card-container{
 }
 
 footer {
-    background-color: rgb(161, 109, 12);
+    background-color: #1e5170;
     position: relative;
     text-align: center;
     padding: 15px;
-    min-width: full;
-    height: 100%;
-    margin: 0;
+    width: 100%;
     font-size: 15px;
     font-weight: 250;
+    color: white;
 }
+
