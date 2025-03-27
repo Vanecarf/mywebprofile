@@ -6,3 +6,5 @@ Ada akun Instagram dan LinkedIn yang bisa dikunjungi.
 Dapat pula mengirimkan pesan melalui gmail.
 Saya juga mencantumkan CV yang bisa diklik jika ada yang ingin melihatnya.
 Beberapa dokumentasi kegiatan juga saya tambahkan.
+
+Web profile saya dapat dilihat melalui link berikut: https://vanecarf.vercel.app/
