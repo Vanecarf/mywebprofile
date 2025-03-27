@@ -30,6 +30,7 @@ nav ul li {
 
 body {
     background-color: #dadfd6;
+    margin: 0;
 }
 
 nav ul li a {
@@ -267,7 +268,6 @@ footer {
     position: relative;
     text-align: center;
     padding: 15px;
-    width: 100%;
     font-size: 15px;
     color: white;
 }
