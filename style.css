@@ -1,0 +1,277 @@
+.navbar {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.nama {
+    color: rgb(42, 100, 175);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    align-items: center;
+    gap: 40px;
+    padding: 30px 80px;
+    justify-content: end;
+    position: relative;
+}
+
+nav ul li {
+    position: relative;
+}
+
+body {
+    margin: 35px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(161, 109, 12);
+    font-weight: 600;
+    font-size: 17px;
+}
+
+nav ul li a:hover {
+    color: rgba(42, 100, 175);
+}
+
+* {
+    font-family: 'Poppins';
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#hero {
+    margin-top: 100px;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+#hero .col {
+    width: 50%;
+}
+
+section {
+    margin: 0px 80px;
+}
+
+#col-hero2 {
+    display: flex;
+    justify-content: center;
+}
+
+#col-hero2 img {
+    display: block;
+    margin-top: 20px;
+    margin-right: 0px;
+    animation: floating 4s ease-in-out infinite;
+}
+
+.row-1 {
+    color: rgb(161, 109, 12);
+    font-size: 30px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.row-1 #textjalan {
+    color: rgb(42, 100, 175);
+    font-size: 42px;
+    margin-top: -30px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    display: inline-block;
+    animation: typing 3s steps(20, end) forwards, blink 1s infinite;
+}
+
+.row-2 {
+    width: 100%;
+    margin-top: -25px;
+    margin-bottom: 35px;
+    color: rgb(39, 38, 38);
+    line-height: 35px;
+    font-size: 25px;
+    /* text-justify: distribute-all-lines; */
+}
+
+.row-3 {
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon-container {
+    position: relative;
+    width: 20%;
+}
+
+.icon-container img{
+    width: 30px;
+    height: 30px;
+}
+
+.icon {
+    background-size: cover; /* Agar gambar menyesuaikan ukuran elemen */
+    background-position: center; /* Menjaga gambar tetap terpusat */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.icon-hover {
+    position: absolute; /* Menumpuk gambar hover dengan gambar pertama */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ukuran gambar */
+    height: 100%; /* Ukuran gambar */
+    background-size: cover; /* Menyesuaikan gambar dengan ukuran elemen */
+    background-position: center; /* Menjaga gambar tetap terpusat */
+    opacity: 0; /* Gambar hover disembunyikan secara default */
+    transition: opacity 0.1s ease; /* Animasi perubahan opacity */
+}
+
+/* Efek hover: Sembunyikan gambar pertama dan tampilkan gambar kedua */
+.icon-container:hover .icon {
+    opacity: 0; /* Sembunyikan gambar pertama saat hover */
+}
+
+.icon-container:hover .icon-hover {
+    opacity: 1; /* Tampilkan gambar kedua saat hover */
+}
+
+
+table{
+    width: 100%;
+    border: none;
+    margin-top: 2rem;
+    overflow: hidden;
+}
+
+td[colspan="2"]{
+    width: 50%;
+}
+
+table h3{
+    color: rgb(161, 109, 12);
+}
+
+table h1{
+    color: rgb(42, 100, 175);
+    margin-top: 15px;
+}
+
+table p{
+    font-size: 16.5px;
+    color: rgb(32, 31, 31);
+    line-height: 30px;
+}
+
+table h4{
+    font-size: 16.5px;
+    color: rgb(39, 38, 38);
+    line-height: 30px;
+}
+
+@keyframes floatImage{
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-50px);}
+    100% {transform: translateY(0);}
+}
+
+td img{
+    display: block;
+    margin: auto;
+    animation: floatImage 3s ease-in-out infinite;
+}
+
+.funfact {
+    line-height: 30px;
+    color: rgb(161, 109, 12);
+}
+
+.my-funfact {
+    color: rgb(39, 38, 38);
+    line-height: 30px;
+    font-size: 16.5px;
+    margin-bottom: 45px;
+}
+
+.card-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto;
+    align-items:center ;
+}
+
+div.card-container{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+} 
+
+.card{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.05);
+} 
+
+ .card img{
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+
+.card p{
+    color: rgb(39, 38, 38);
+}
+
+footer {
+    background-color: rgb(161, 109, 12);
+    position: relative;
+    text-align: center;
+    padding: 15px;
+    min-width: full;
+    height: 100%;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 250;
+}
